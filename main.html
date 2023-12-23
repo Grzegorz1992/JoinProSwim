@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			type="image/png"
+			sizes="32x32"
+			rel="icon"
+			href="./images/icons8-swim-32.png"
+		/>
+		<title>ProSwim</title>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300;1,400&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script
+			src="https://kit.fontawesome.com/d5fa9aa9c4.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="header-box">
+				<h1 class="header-title">
+					<a href="index.html">Pro<span class="header-span">Swim</span></a>
+				</h1>
+
+				<p class="basket-icon">
+					<i class="fa-solid fa-basket-shopping"></i
+					><span class="basket-counter">Koszyk</span>
+				</p>
+			</div>
+
+			<div class="search-box">
+				<input
+					type="text"
+					placeholder="wyszukaj grupę... "
+					class="search-bar"
+				/>
+			</div>
+		</header>
+
+		<div class="form-box">
+			<form class="products-form">
+				<div class="products-box"></div>
+				<p>Łączna kwota do zapłaty: <span class="payment-amount">0 zł</span></p>
+			</form>
+
+			<form class="basket-items-form">
+				<div class="personal-data">
+					<h2 class="personal-data-title">1.Uzupełnij swoje dane</h2>
+					<input
+						type="text"
+						class="basket-input user-name"
+						placeholder="wpisz swoje imię"
+					/>
+					
+					<input
+						type="text"
+						class="basket-input user-secondname"
+						placeholder="wpisz swoje nazwisko"
+					/>
+					
+
+					<input
+						type="email"
+						class="basket-input user-mail"
+						placeholder="wpisz swój email"
+						id="email"
+					/>
+					
+					<input
+						type="tel"
+						class="basket-input user-phone"
+						placeholder="numer telefonu (9 cyfr)"
+						id="phone"
+					/>
+					
+				</div>
+				<div class="payment">
+					<h2 class="payment-title">2.Wybierz sposób płatności</h2>
+					<div class="payment-item">
+						<p class="payment-item-text">
+							<i class="fa-solid fa-money-bill-transfer"></i>Przelew bankowy
+						</p>
+						<button class="choose-payment">Wybierz</button>
+					</div>
+					<div class="payment-item">
+						<p class="payment-item-text">
+							<i class="fa-brands fa-cc-visa"></i>Karta kredytowa
+						</p>
+						<button class="choose-payment">Wybierz</button>
+					</div>
+					<div class="payment-item">
+						<p class="payment-item-text">
+							<i class="fa-brands fa-google-pay"></i>GooglePay
+						</p>
+						<button class="choose-payment">Wybierz</button>
+					</div>
+					<div class="payment-item">
+						<p class="payment-item-text">
+							<i class="fa-solid fa-square-phone-flip"></i>BLIK
+						</p>
+						<button class="choose-payment">Wybierz</button>
+					</div>
+				</div>
+				<div class="form-buttons">
+					<button class="close-btn form-btn">Zamknij</button>
+					<button class="payment-btn form-btn">Zapłać</button>
+				</div>
+			</form>
+		</div>
+
+		<button class="scroll-to-top">
+			<i class="fa-solid fa-chevron-up"></i>
+		</button>
+
+		<main>
+			<div class="welcome-box">
+				<p class="welcome-text">
+					Wybierz grupę odpowiednią dla siebie. Jeśli potrzebujesz pomocy,
+					skontaktuj się z nami. Wszystkie zajęcia odbywają się we Wrocławiu na
+					Pływalni Syrenka.
+				</p>
+				<p class="welcome-text bottom-welcome-text">
+					Pozdrawiamy, zespół Pro <span class="welcome-span">Swim</span>
+				</p>
+			</div>
+
+			<section class="categories">
+				<h2 class="categories-title">Kategorie</h2>
+				<div class="underline"></div>
+				<div class="categories-box">
+					<div class="category-item">
+						<label for="level-select">Wybierz poziom:</label>
+						<select name="levels" id="level-select">
+							<option value="all">- - Wszystkie - -</option>
+							<option value="Poziom początkujący">Poziom początkujacy</option>
+							<option value="Poziom początkujący+">
+								Poziom początkujacy +
+							</option>
+							<option value="Poziom zaawansowany">Poziom zaawansowany</option>
+							<option value="Poziom Masters">Poziom Masters</option>
+							<option value="Poziom triathlon">Poziom Triathlon</option>
+						</select>
+					</div>
+					<div class="category-item">
+						<label for="day-select">Wybierz dzień:</label>
+						<select name="days" id="day-select">
+							<option value="all">- - Wszystkie - -</option>
+							<option value="Poniedziałek">Poniedziałek</option>
+							<option value="Wtorek">Wtorek</option>
+							<option value="Środa">Środa</option>
+							<option value="Piątek">Piątek</option>
+							<option value="Sobota">Sobota</option>
+						</select>
+					</div>
+					<div class="category-item">
+						<label for="coach-select">Wybierz instruktora:</label>
+						<select name="coaches" id="coach-select">
+							<option value="all">- - Wszystkie - -</option>
+							<option value="Władysław Rorzecki">Władysław Rorzecki</option>
+							<option value="Nikodem Musik">Nikodem Musik</option>
+							<option value="Joanna Zumska">Joanna Zumska</option>
+							<option value="Alisa Morozova">Alisa Morozova</option>
+							<option value="Oskar Miłoszewski">Oskar Miłoszewski</option>
+						</select>
+					</div>
+				</div>
+			</section>
+			<section class="groups"></section>
+		</main>
+
+		<!-- <footer class="main-footer">
+			<p class="footer-text">
+				&copy; <span class="footer-year"></span> | Swim<span class="footer-pro"
+					>Pro</span
+				>
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-instagram"></i>
+			</p>
+		</footer> -->
+		<script src="./js/groups.js"></script>
+		<script src="./js/joinsection.js"></script>
+	</body>
+</html>
